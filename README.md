@@ -1,36 +1,56 @@
 # GST Compliance Agent
 
-AI-powered GST compliance auditing platform for automated invoice validation, anomaly detection, and compliance reporting.
+<p align="center">
+  <img src="./assets/architecture.png" alt="GST Compliance Agent Architecture" width="100%">
+</p>
+
+AI-powered GST compliance auditing platform for automated invoice validation, anomaly detection, reconciliation, and compliance reporting.
 
 ---
 
-## Architecture Flow
+## Overview
 
-![Architecture](https://github.com/user-attachments/assets/3014f89f-88b9-4eca-aa32-4a939f663598)
+GST Compliance Agent is an end-to-end auditing platform designed to simplify GST compliance workflows. The system processes GST datasets, validates records, identifies discrepancies, detects anomalies, and generates actionable audit insights through an intuitive dashboard.
+
+The platform combines modern web technologies, data processing frameworks, and AI-powered analysis to streamline compliance auditing and reporting.
 
 ---
 
-## Demo 
+## Key Features
 
-[Watch Demo](https://youtu.be/jXIfQKOycdA)
+- Automated GST invoice validation
+- AI-powered anomaly detection
+- Purchase register and GST reconciliation
+- Compliance rule verification
+- Risk assessment and scoring
+- Audit report generation
+- Interactive dashboard for data analysis
+- Excel dataset processing and validation
 
 ---
 
 ## System Architecture
 
-Frontend (React) → FastAPI Backend → AI Processing Engine → Compliance Report Generation
-
----
-
-## Features
-
-- GST invoice validation
-- AI-powered anomaly detection
-- Automated compliance auditing
-- Purchase vs GST reconciliation
-- Intelligent reporting system
-- Excel dataset processing
-- Frontend dashboard interface
+```text
+React Frontend
+      │
+      ▼
+FastAPI Backend
+      │
+      ▼
+Data Processing Engine
+(Pandas + NumPy)
+      │
+      ▼
+AI Analysis Layer
+(OpenAI / Gemini)
+      │
+      ▼
+Compliance Validation
+      │
+      ▼
+Audit Reports & Insights
+```
 
 ---
 
@@ -45,10 +65,13 @@ Frontend (React) → FastAPI Backend → AI Processing Engine → Compliance Rep
 - Python
 - FastAPI
 
-### Data & AI
+### Data Processing
 - Pandas
 - NumPy
+
+### AI Integration
 - OpenAI API
+- Gemini API
 
 ---
 
@@ -56,8 +79,10 @@ Frontend (React) → FastAPI Backend → AI Processing Engine → Compliance Rep
 
 1. Upload GST datasets
 2. Validate and sanitize records
-3. Detect mismatches and anomalies
-4. Generate compliance insights
+3. Process and reconcile financial data
+4. Detect mismatches and anomalies
+5. Perform compliance verification
+6. Generate audit insights and reports
 
 ---
 
@@ -80,19 +105,15 @@ gst-compliance-agent/
 
 ```bash
 git clone https://github.com/pratheek-R1/Gst-Compliance-Auditor.git
+
 cd gst-compliance-agent
+
 pip install -r requirements.txt
 ```
 
 ---
 
-## Sample Data
-
-Sample GST datasets are available inside the `test_data/` directory for testing and demo purposes.
-
----
-
-## Run Project
+## Running the Application
 
 ```bash
 python run.py
@@ -100,9 +121,19 @@ python run.py
 
 ---
 
-## Future Scope
+## Demo
 
-- AI compliance assistant
-- Predictive fraud analytics
-- Real-time GST integrations
-- Advanced reporting dashboard
+[Watch Demo](YOUR_DEMO_LINK)
+
+---
+
+## Use Cases
+
+- GST compliance auditing
+- Vendor invoice verification
+- Purchase register reconciliation
+- Tax discrepancy identification
+- Internal audit workflows
+- Compliance reporting and documentation
+
+---
