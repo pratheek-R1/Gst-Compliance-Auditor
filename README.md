@@ -1,7 +1,7 @@
 # GST Compliance Agent
 
 <p align="center">
-  <img src="./assets/architecture.png" alt="GST Compliance Agent Architecture" width="100%">
+  <img src="PASTE_RAW_URL_HERE" alt="GST Compliance Agent Architecture" width="100%">
 </p>
 
 AI-powered GST compliance auditing platform for automated invoice validation, anomaly detection, reconciliation, and compliance reporting.
