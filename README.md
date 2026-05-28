@@ -119,14 +119,6 @@ pip install -r requirements.txt
 python run.py
 ```
 
----
-
-## Demo
-
-[Watch Demo](YOUR_DEMO_LINK)
-
----
-
 ## Use Cases
 
 - GST compliance auditing
