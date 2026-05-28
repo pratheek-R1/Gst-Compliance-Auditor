@@ -1,0 +1,60 @@
+# Prerequisites
+*.py[cod]
+*$py.class
+
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.env.*
+*.env
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# FastAPI / Temp Uploads / Runtime Excel files
+gst-hackathon-project/gst-api/temp_uploads/
+temp_uploads/
+temp_*.xlsx
+temp_*.csv
+doc_audit_*.xlsx
+doc_audit_*.csv
+Purchase_Register_*.xlsx
+GSTR2B_*.xlsx
+*.log
+
+# Frontend / React / Node
+node_modules/
+dist/
+build/
+.npm/
+.eslintcache
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Streamlit / Cache
+.streamlit/
+.cache/
+
+# Secrets
+*.pem
+*.key
+
+# Logs
+logs/

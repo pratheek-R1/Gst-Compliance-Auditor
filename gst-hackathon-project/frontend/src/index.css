@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-[#09090b] font-sans text-zinc-100 antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(161, 161, 170, 0.15) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.15);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Accessibility Focus Rings */
+*:focus-visible {
+  @apply outline-none ring-2 ring-sky-500 ring-offset-2 ring-offset-[#09090b];
+}
+
+/* Selection */
+::selection {
+  @apply bg-sky-500/30 text-white;
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-2xl border border-zinc-800 bg-zinc-950/80 backdrop-blur-xl transition-all duration-200;
+  }
+
+  .glass-panel-strong {
+    @apply rounded-2xl border border-zinc-700 bg-zinc-900/90 backdrop-blur-xl;
+  }
+
+  .input-shell {
+    @apply w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-sm text-zinc-100 outline-none transition-all placeholder:text-zinc-600 hover:border-zinc-700 focus:border-sky-500/60 focus:bg-zinc-900/80 focus:ring-2 focus:ring-sky-500/15;
+  }
+
+  .premium-button {
+    @apply inline-flex items-center justify-center gap-2.5 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition-all duration-200 hover:bg-zinc-200 active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-40;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-2.5 text-sm font-medium text-zinc-300 transition-all duration-200 hover:border-zinc-700 hover:bg-zinc-800 hover:text-white active:scale-[0.97];
+  }
+
+  .section-title {
+    @apply font-display text-2xl font-semibold tracking-tight text-white md:text-3xl;
+  }
+
+  .grid-backdrop {
+    background-size: 48px 48px;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  }
+
+  /* Stat card accents */
+  .accent-cyan {
+    @apply border-sky-500/20;
+  }
+  .accent-amber {
+    @apply border-amber-500/20;
+  }
+  .accent-violet {
+    @apply border-violet-500/20;
+  }
+  .accent-emerald {
+    @apply border-emerald-500/20;
+  }
+}
+
+/* Print Styles for Pre-Filing Report */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide everything except the report */
+  aside, .glass-panel:not(#pre-filing-report *), nav, header,
+  .premium-button, .secondary-button, .print\\:hidden {
+    display: none !important;
+  }
+
+  #pre-filing-report {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+  }
+
+  #pre-filing-report * {
+    background: white !important;
+    border-color: #e4e4e7 !important;
+    color: #18181b !important;
+  }
+
+  #pre-filing-report .text-emerald-400 { color: #059669 !important; }
+  #pre-filing-report .text-amber-400 { color: #d97706 !important; }
+  #pre-filing-report .text-rose-400 { color: #e11d48 !important; }
+}

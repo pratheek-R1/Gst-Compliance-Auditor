@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+google-generativeai
+python-dotenv
+openpyxl
+thefuzz
+python-Levenshtein
