@@ -79,7 +79,7 @@ gst-compliance-agent/
 ## Installation
 
 ```bash
-git clone https://github.com/Perex21/gst-compliance-agent.git
+git clone https://github.com/pratheek-R1/Gst-Compliance-Auditor.git
 cd gst-compliance-agent
 pip install -r requirements.txt
 ```
