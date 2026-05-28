@@ -106,7 +106,7 @@ gst-compliance-agent/
 ```bash
 git clone https://github.com/pratheek-R1/Gst-Compliance-Auditor.git
 
-cd gst-compliance-agent
+cd Gst-Compliance-Auditor
 
 pip install -r requirements.txt
 ```
